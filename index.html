@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>박종석 ♥ 신주영 결혼합니다</title>
+<meta name="description" content="2027년 6월 26일 토요일 · 퍼스트가든">
+<!-- 카카오톡 공유 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="박종석 ♥ 신주영 결혼합니다">
+<meta property="og:description" content="2027년 6월 26일 토요일 · 퍼스트가든 | 평생 여행의 첫 비행에 초대합니다">
+<!-- 사진 준비 후: <meta property="og:image" content="https://(호스팅주소)/images/main.jpg"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF8F2; --card:#FFFFFF; --ink:#1F2A44; --muted:#7A8194;
+    --accent:#E8735A; --sky:#CFE7F5; --sky2:#EAF5FB; --line:#E4DED3;
+    --serif:'Gowun Batang',serif; --sans:'Noto Sans KR',system-ui,sans-serif; --mono:'Space Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html,body{background:#E9EEF2}
+  body{font-family:var(--sans);color:var(--ink);line-height:1.6;overflow-x:hidden}
+  body.locked{overflow:hidden;height:100vh}
+  .app{max-width:480px;margin:0 auto;background:var(--paper);min-height:100vh;position:relative;overflow:hidden}
+
+  /* ───────── 커버 (탑승 전) ───────── */
+  .cover{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:linear-gradient(180deg,#9FD0EE 0%,#CFE7F5 55%,#F6F1E7 100%);overflow:hidden;transition:opacity .8s ease, transform 1s ease}
+  .cover.gone{opacity:0;transform:translateY(-30px);pointer-events:none}
+  .cloud{position:absolute;background:#fff;border-radius:100px;opacity:.85;filter:blur(.3px)}
+  .cloud::before,.cloud::after{content:"";position:absolute;background:#fff;border-radius:50%}
+  .cloud::before{width:55%;height:160%;left:15%;top:-70%}
+  .cloud::after{width:40%;height:130%;right:12%;top:-50%}
+  .c1{width:120px;height:34px;top:12%;left:-140px;animation:drift 26s linear infinite}
+  .c2{width:90px;height:26px;top:26%;left:-100px;animation:drift 34s linear infinite 6s}
+  .c3{width:150px;height:40px;top:70%;left:-170px;animation:drift 40s linear infinite 12s;opacity:.7}
+  @keyframes drift{to{transform:translateX(calc(100vw + 340px))}}
+  .cover-top{font-family:var(--mono);font-size:12px;letter-spacing:.3em;color:#fff;text-shadow:0 1px 6px rgba(31,42,68,.25);margin-bottom:18px}
+
+  .pass{width:min(86vw,340px);background:var(--card);border-radius:18px;box-shadow:0 18px 40px rgba(31,42,68,.18);position:relative;cursor:pointer;user-select:none}
+  .pass-head{background:var(--ink);color:#fff;border-radius:18px 18px 0 0;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.15em}
+  .pass-head b{font-size:13px}
+  .pass-body{padding:20px 20px 16px}
+  .route{display:flex;align-items:center;justify-content:space-between}
+  .route .pt{text-align:center}
+  .route .code{font-family:var(--mono);font-weight:700;font-size:38px;line-height:1;letter-spacing:.02em}
+  .route .nm{font-family:var(--serif);font-size:14px;margin-top:6px}
+  .route .role{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.15em}
+  .route .mid{flex:1;display:flex;align-items:center;margin:0 10px;color:var(--accent)}
+  .route .mid::before,.route .mid::after{content:"";flex:1;border-top:1.5px dashed #C9C2B5}
+  .route .mid svg{width:22px;height:22px;margin:0 6px;transform:rotate(90deg)}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px 8px;margin-top:20px}
+  .grid .k{font-family:var(--mono);font-size:9.5px;color:var(--muted);letter-spacing:.12em}
+  .grid .v{font-family:var(--mono);font-size:13px;font-weight:700;white-space:nowrap}
+  .perf{position:relative;height:0;border-top:2px dashed var(--line);margin:0 16px}
+  .perf::before,.perf::after{content:"";position:absolute;top:-13px;width:24px;height:24px;border-radius:50%;background:#DCEBF4}
+  .perf::before{left:-30px}.perf::after{right:-30px}
+  .stub{padding:14px 20px 18px;transition:transform .7s cubic-bezier(.5,-0.3,.6,1),opacity .7s}
+  .stub.torn{transform:translateY(120px) rotate(-8deg);opacity:0}
+  .barcode{height:42px;display:flex;align-items:stretch;gap:0}
+  .barcode i{display:block;background:var(--ink)}
+  .tap{margin-top:12px;text-align:center;font-size:13px;color:var(--accent);font-weight:500;animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  .cover-sub{margin-top:22px;font-size:12px;color:#5E6A80}
+
+  /* 커버: 비행기만 */
+  .cover-names{font-family:var(--serif);font-size:24px;color:var(--ink);margin-top:4px}
+  .cover-names span{color:var(--accent)}
+  .cover-date{font-family:var(--mono);font-size:13px;letter-spacing:.2em;color:#4B5A74;margin-top:6px}
+  .runway{position:absolute;left:0;right:0;bottom:0;height:30%;background:linear-gradient(180deg,#8E99A8,#6F7A8A)}
+  .runway::before{content:"";position:absolute;left:0;right:0;top:46%;height:4px;
+    background:repeating-linear-gradient(90deg,#fff 0 34px,transparent 34px 64px);opacity:.85}
+  .runway.rolling::before{animation:roll .35s linear infinite}
+  @keyframes roll{to{background-position:-64px 0}}
+  .runway::after{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:#7FB069}
+  .plane-wrap{position:absolute;left:50%;bottom:calc(30% - 6px);transform:translateX(-50%);z-index:3;cursor:pointer;
+    display:flex;flex-direction:column;align-items:center}
+  .plane{width:min(64vw,260px);transform-origin:20% 90%;filter:drop-shadow(0 10px 10px rgba(31,42,68,.22))}
+  .plane svg{width:100%;display:block}
+  .plane-wrap:not(.fly) .plane{animation:idle 2.4s ease-in-out infinite}
+  @keyframes idle{50%{transform:translateY(-2px)}}
+  .ring{position:absolute;left:50%;top:50%;width:110%;aspect-ratio:2.2;transform:translate(-50%,-55%);border:2px solid rgba(255,255,255,.9);border-radius:50%;animation:ring 1.8s ease-out infinite;pointer-events:none}
+  @keyframes ring{0%{opacity:.9;transform:translate(-50%,-55%) scale(.7)}100%{opacity:0;transform:translate(-50%,-55%) scale(1.25)}}
+  .tap-hint{position:absolute;left:50%;bottom:12%;transform:translateX(-50%);z-index:3;white-space:nowrap;
+    color:#fff;font-weight:700;font-size:15px;letter-spacing:.05em;animation:pulse 1.6s ease-in-out infinite}
+  .cover-sub{position:absolute;left:0;right:0;bottom:6%;text-align:center;font-size:12px;color:#E8EDF3;z-index:3}
+  .plane-wrap.fly .ring{display:none}
+  .plane-wrap.fly .plane{animation:fly 2.2s cubic-bezier(.5,0,.75,.35) forwards}
+  @keyframes fly{
+    0%{transform:translate(0,0) rotate(0)}
+    45%{transform:translate(28vw,0) rotate(0)}
+    58%{transform:translate(42vw,-2vh) rotate(-12deg)}
+    100%{transform:translate(120vw,-75vh) rotate(-24deg) scale(.6)}
+  }
+  .tap-hint.hide,.cover-sub.hide{opacity:0;transition:opacity .3s;animation:none}
+
+  /* ───────── 본문 ───────── */
+  section{padding:64px 24px;text-align:center}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--accent)}
+  h2{font-family:var(--serif);font-weight:700;font-size:21px;margin-top:6px}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  .hero{padding:56px 20px 40px;background:linear-gradient(180deg,var(--sky) 0%,var(--paper) 100%)}
+  .hero .pass{cursor:default;margin:24px auto 0;width:100%;max-width:360px}
+  .hero-title{font-family:var(--serif);font-size:26px;margin-top:10px}
+  .hero-date{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:4px;letter-spacing:.08em}
+
+  .msg p{font-family:var(--serif);font-size:15.5px;line-height:2.1;margin-top:28px;word-break:keep-all}
+  .family{margin-top:36px;font-size:15px;line-height:2.1}
+  .family b{font-family:var(--serif);font-size:17px}
+  .family .sm{color:var(--muted);font-size:13px;margin:0 4px}
+
+  .sched{background:var(--card)}
+  .when{font-family:var(--serif);font-size:17px;margin-top:20px}
+  .cal{max-width:320px;margin:24px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0}
+  .cal-h{font-family:var(--mono);font-size:13px;letter-spacing:.2em;margin-bottom:10px}
+  .cal table{width:100%;border-collapse:collapse;font-size:14px}
+  .cal th{font-weight:500;font-size:12px;color:var(--muted);padding:6px 0}
+  .cal td{padding:7px 0;position:relative}
+  .cal .sun{color:#D2564B}.cal .sat{color:#4A72B8}
+  .cal td.day{color:#fff;font-weight:700}
+  .cal td.day span{position:relative;z-index:1}
+  .cal td.day::before{content:"";position:absolute;left:50%;top:50%;width:34px;height:34px;transform:translate(-50%,-50%);border-radius:50%;background:var(--accent)}
+  .dday{display:flex;justify-content:center;gap:10px;margin-top:28px}
+  .dday div{background:var(--ink);color:#fff;border-radius:10px;width:64px;padding:10px 0}
+  .dday b{display:block;font-family:var(--mono);font-size:22px;line-height:1.2}
+  .dday small{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;opacity:.7}
+  .dtext{margin-top:18px;font-size:14px}
+  .dtext em{font-style:normal;color:var(--accent);font-weight:700}
+
+  .gallery .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:24px}
+  .gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px}
+
+  .loc .venue{font-family:var(--serif);font-size:19px;font-weight:700;margin-top:20px}
+  .loc .addr{font-size:14px;color:var(--muted);margin-top:4px}
+  .btns{display:flex;gap:8px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+  .btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:10px 16px;font:500 13px var(--sans);text-decoration:none;cursor:pointer}
+  .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .info{max-width:360px;margin:28px auto 0;text-align:left}
+  .info dl{border-top:1px solid var(--line);padding:14px 2px}
+  .info dt{font-weight:700;font-size:14px}
+  .info dd{font-size:13.5px;color:#4B5368;margin-top:4px;word-break:keep-all}
+
+  .outro{background:var(--ink);color:#fff;padding:72px 24px 90px}
+  .outro .eyebrow{color:#F3A68F}
+  .outro p{font-family:var(--serif);font-size:15px;line-height:2;margin-top:18px;opacity:.9}
+  .outro .btn{background:transparent;color:#fff;border-color:rgba(255,255,255,.4);margin-top:26px}
+
+  /* BGM 버튼 */
+  .bgm{position:fixed;top:14px;right:max(14px,calc(50vw - 240px + 14px));z-index:40;width:40px;height:40px;border-radius:50%;
+    border:none;background:rgba(255,255,255,.85);box-shadow:0 4px 14px rgba(31,42,68,.15);display:none;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)}
+  .bgm.show{display:flex}
+  .bgm svg{width:18px;height:18px}
+  .bgm.on svg{animation:spin 4s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .toast{position:fixed;left:50%;bottom:32px;transform:translate(-50%,20px);background:rgba(31,42,68,.92);color:#fff;font-size:13px;padding:10px 18px;border-radius:999px;opacity:0;transition:.3s;z-index:60;pointer-events:none}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+  [hidden]{display:none!important}
+
+  /* 탑승 전 안내 */
+  .notice{background:var(--sky2)}
+  .notice-card{max-width:360px;margin:24px auto 0;background:var(--card);border-radius:16px;padding:24px 20px;box-shadow:0 8px 24px rgba(31,42,68,.07)}
+  .notice-card .ic{font-size:28px}
+  .notice-card p{font-size:14.5px;line-height:1.9;margin-top:10px;word-break:keep-all}
+  .notice-card b{color:var(--accent)}
+  .venue-link{background:none;border:none;font:inherit;color:inherit;cursor:pointer;border-bottom:1.5px dashed var(--accent);padding-bottom:1px}
+  .venue-link small{font-family:var(--sans);font-size:12px;color:var(--accent);font-weight:500;margin-left:4px;vertical-align:middle}
+
+  /* 퍼스트가든 소개 시트 */
+  .sheet-bg{position:fixed;inset:0;background:rgba(20,26,40,.5);z-index:70;opacity:0;pointer-events:none;transition:opacity .3s}
+  .sheet-bg.open{opacity:1;pointer-events:auto}
+  .sheet{position:fixed;left:50%;bottom:0;width:100%;max-width:480px;max-height:85vh;overflow-y:auto;background:var(--paper);z-index:71;
+    border-radius:22px 22px 0 0;padding:12px 22px 32px;transform:translate(-50%,105%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+  .sheet.open{transform:translate(-50%,0)}
+  .sheet .grab{width:40px;height:4px;border-radius:4px;background:#D5CFC4;margin:0 auto 18px}
+  .sheet h3{font-family:var(--serif);font-size:22px}
+  .sheet .tag{font-size:13.5px;color:var(--muted);margin-top:4px;word-break:keep-all}
+  .sheet ul{list-style:none;margin-top:18px}
+  .sheet li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:14px;word-break:keep-all}
+  .sheet li .e{font-size:20px;line-height:1.3}
+  .sheet li b{display:block;font-size:14.5px}
+  .sheet li span{color:#4B5368;font-size:13.5px}
+  .sheet .btns{margin-top:18px}
+  .sheet .close{position:absolute;top:14px;right:16px;border:none;background:none;font-size:22px;color:var(--muted);cursor:pointer}
+</style>
+</head>
+<body class="locked">
+
+<!-- ───────── 커버: 탭하면 이륙 ───────── -->
+<div class="cover" id="cover">
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+  <div style="position:absolute;top:16%;left:0;right:0;text-align:center">
+    <div class="cover-top">WEDDING INVITATION</div>
+    <div class="cover-names">박종석 <span>♥</span> 신주영</div>
+    <div class="cover-date">2027 · 06 · 26</div>
+  </div>
+
+  <div class="runway" id="runway"></div>
+
+  <div class="plane-wrap" id="planeBtn" role="button" aria-label="비행기를 탭하여 청첩장 열기">
+    <div class="ring"></div>
+    <div class="plane">
+      <svg viewBox="0 0 220 90" xmlns="http://www.w3.org/2000/svg">
+        <!-- 꼬리날개 (흰색 + 태극 문양) -->
+        <path d="M30 42 L14 6 Q13 2 18 2 L32 2 Q36 2 39 6 L66 40 Z" fill="#FFFFFF" stroke="#D9E2EA" stroke-width="1"/>
+        <g transform="translate(31 17)">
+          <circle r="8.5" fill="#0064B4"/>
+          <path d="M-8.5 0 A8.5 8.5 0 0 1 8.5 0 Z" fill="#E4002B"/>
+          <path d="M-8.5 0 A4.25 4.25 0 0 0 0 0 A4.25 4.25 0 0 1 8.5 0" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+        </g>
+        <!-- 동체 (하늘색 상부 + 은색 하부) -->
+        <path d="M18 46 Q18 34 40 34 L168 34 Q196 34 212 50 Q206 60 180 62 L44 62 Q18 62 18 46 Z" fill="#9DCFEC"/>
+        <path d="M19 51 L209 51 Q204 60 180 62 L44 62 Q22 62 19 51 Z" fill="#C9D0D7"/>
+        <path d="M19 51 L209 51" stroke="#FFFFFF" stroke-width="1.2"/>
+        <!-- 항공사 표기 -->
+        <text x="62" y="41.5" font-family="Arial,Helvetica,sans-serif" font-size="7.5" font-weight="700" letter-spacing="1" fill="#0B3A78">JS <tspan fill="#E4002B">♥</tspan> JY Air</text>
+        <!-- 창문 -->
+        <g fill="#1F3A5F" transform="translate(0 2)">
+          <circle cx="62" cy="44" r="3"/><circle cx="74" cy="44" r="3"/><circle cx="86" cy="44" r="3"/><circle cx="98" cy="44" r="3"/>
+          <circle cx="122" cy="44" r="3"/><circle cx="134" cy="44" r="3"/><circle cx="146" cy="44" r="3"/><circle cx="158" cy="44" r="3"/>
+        </g>
+        <path d="M180 40 L198 42 Q202 46 198 47 L182 46 Z" fill="#1F2A44"/>
+        <!-- 문 -->
+        <rect x="166" y="38" width="8" height="12" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/>
+        <!-- 날개 & 엔진 -->
+        <path d="M92 54 L136 54 L104 80 Q100 84 94 84 L84 84 Z" fill="#1F2A44"/>
+        <rect x="104" y="62" width="24" height="9" rx="4.5" fill="#3A4766"/>
+        <!-- 꼬리 수평날개 -->
+        <path d="M24 44 L56 44 L40 50 L20 50 Z" fill="#1F2A44" opacity=".85"/>
+        <!-- 바퀴 -->
+        <g fill="#1F2A44"><rect x="58" y="62" width="2" height="18"/><circle cx="59" cy="83" r="5"/>
+        <rect x="180" y="61" width="2" height="19"/><circle cx="181" cy="83" r="5"/></g>
+      </svg>
+    </div>
+  </div>
+  <div class="tap-hint" id="tapHint">비행기를 탭하여 출발 ✈</div>
+  <div class="cover-sub" id="coverSub">소리를 켜면 배경음악과 함께 즐길 수 있어요</div>
+</div>
+
+<button class="bgm" id="bgmBtn" aria-label="배경음악 켜기/끄기">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="bgmIcon"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+</button>
+<div class="toast" id="toast"></div>
+
+<div class="app">
+  <!-- 메인 보딩패스 -->
+  <section class="hero">
+    <div class="eyebrow reveal">WE ARE GETTING MARRIED</div>
+    <div class="hero-title reveal">박종석 <span style="color:var(--accent)">♥</span> 신주영</div>
+    <div class="hero-date reveal">2027. 06. 26. SAT</div>
+    <div class="pass reveal">
+      <div class="pass-head"><span>BOARDING PASS</span><b>✈ JS <span style="color:#F3A68F">♥</span> JY AIR</b></div>
+      <div class="pass-body">
+        <div class="route">
+          <div class="pt"><div class="role">FROM</div><div class="code">JS</div><div class="nm">신랑 박종석</div></div>
+          <div class="mid"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></div>
+          <div class="pt"><div class="role">TO</div><div class="code">JY</div><div class="nm">신부 신주영</div></div>
+        </div>
+        <div class="grid">
+          <div><div class="k">PASSENGER</div><div class="v">YOU</div></div>
+          <div><div class="k">FLIGHT</div><div class="v">WD0626</div></div>
+          <div><div class="k">CLASS</div><div class="v">VIP</div></div>
+          <div><div class="k">DATE</div><div class="v">26 JUN 27</div></div>
+          <div><div class="k">BOARDING</div><div class="v" id="boardTime">TBA</div></div>
+          <div><div class="k">SEAT</div><div class="v">FOREVER</div></div>
+        </div>
+      </div>
+      <div class="perf"></div>
+      <div class="stub"><div class="barcode" data-seed="2627"></div></div>
+    </div>
+  </section>
+
+  <!-- 모시는 말씀 -->
+  <section class="msg">
+    <div class="eyebrow reveal">INVITATION</div>
+    <h2 class="reveal">모시는 말씀</h2>
+    <p class="reveal">
+      서로 다른 곳에서 출발한 두 사람이<br>
+      같은 비행기에 오르게 되었습니다.<br><br>
+      평생을 함께할 긴 여행의 첫 비행,<br>
+      소중한 분들을 탑승객으로 모시고 싶습니다.<br><br>
+      귀한 걸음 하시어<br>
+      두 사람의 힘찬 이륙을 축복해 주세요.
+    </p>
+    <div class="family reveal" id="family"></div>
+  </section>
+
+  <!-- 일정 -->
+  <section class="sched">
+    <div class="eyebrow reveal">FLIGHT SCHEDULE</div>
+    <h2 class="reveal">예식 일시</h2>
+    <div class="when reveal" id="whenText">2027년 6월 26일 토요일</div>
+    <div class="cal reveal"><div class="cal-h">JUNE 2027</div><table id="cal"></table></div>
+    <div class="dday reveal" id="countdown">
+      <div><b id="cdD">0</b><small>DAYS</small></div>
+      <div><b id="cdH">0</b><small>HOUR</small></div>
+      <div><b id="cdM">0</b><small>MIN</small></div>
+      <div><b id="cdS">0</b><small>SEC</small></div>
+    </div>
+    <div class="dtext reveal" id="dtext"></div>
+  </section>
+
+  <!-- 탑승 전 안내 -->
+  <section class="notice">
+    <div class="eyebrow reveal">BEFORE BOARDING</div>
+    <h2 class="reveal">탑승 전 안내</h2>
+    <div class="notice-card reveal">
+      <div class="ic">🌷</div>
+      <p>
+        예식 입장 전, 하객분들께서는<br>
+        <b>퍼스트가든을 자유롭게 이용</b>하실 수 있습니다.<br><br>
+        23가지 테마정원을 산책하시며<br>
+        여행 같은 여유로운 시간 보내세요.
+      </p>
+      <div class="btns"><button class="btn primary" data-open-venue>퍼스트가든 둘러보기</button></div>
+    </div>
+  </section>
+
+  <!-- 갤러리: CONFIG.photos에 사진을 넣으면 자동으로 나타납니다 -->
+  <section class="gallery" id="gallery" hidden>
+    <div class="eyebrow reveal">TRAVEL LOG</div>
+    <h2 class="reveal">갤러리</h2>
+    <div class="grid3" id="photos"></div>
+  </section>
+
+  <!-- 오시는 길 -->
+  <section class="loc">
+    <div class="eyebrow reveal">GATE INFORMATION</div>
+    <h2 class="reveal">오시는 길</h2>
+    <div class="venue reveal"><button class="venue-link" data-open-venue><span id="venueName"></span><small>ⓘ 소개 보기</small></button></div>
+    <div class="addr reveal" id="venueAddr"></div>
+    <div class="btns reveal">
+      <a class="btn" id="kakaoMap" target="_blank" rel="noopener">카카오맵</a>
+      <a class="btn" id="naverMap" target="_blank" rel="noopener">네이버 지도</a>
+      <button class="btn" id="copyAddr">주소 복사</button>
+    </div>
+    <div class="info reveal" id="transport"></div>
+  </section>
+
+  <!-- 마무리 -->
+  <section class="outro">
+    <div class="eyebrow reveal">THANK YOU FOR FLYING WITH US</div>
+    <p class="reveal">
+      함께해 주시는 모든 분들께<br>
+      감사한 마음을 담아<br>
+      즐거운 여행으로 보답하겠습니다.
+    </p>
+    <button class="btn reveal" id="shareBtn">청첩장 링크 복사하기</button>
+  </section>
+</div>
+
+<!-- 퍼스트가든 소개 시트 -->
+<div class="sheet-bg" id="sheetBg"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <div class="grab"></div>
+  <button class="close" id="sheetClose" aria-label="닫기">✕</button>
+  <div class="eyebrow">DESTINATION GUIDE</div>
+  <h3 id="sheetTitle">퍼스트가든</h3>
+  <div class="tag">파주에 있는 대규모 복합문화공간으로, 23가지 테마정원을 품은 가든입니다.</div>
+  <ul>
+    <li><div class="e">🌿</div><div><b>23가지 테마정원</b><span>토스카나 광장, 로즈가든, 허브가든, 화이트가든 &amp; 벚나무길, 꽃수로길, 제우스벽천분수 등</span></div></li>
+    <li><div class="e">🌴</div><div><b>그린하우스</b><span>실개울, 녹차밭, 귤원, 동백원, 트로피칼 가든, 버드가든을 실내에서 즐길 수 있어요</span></div></li>
+    <li><div class="e">✨</div><div><b>불빛축제</b><span>밤이 되면 정원 곳곳에 조명이 켜지고, 벚나무길이 루미나리에로 빛나요</span></div></li>
+    <li><div class="e">🍝</div><div><b>다이닝</b><span>일자르디노, 도토리, 탄탈라이즈, 희가든, 푸드코트</span></div></li>
+    <li><div class="e">🕙</div><div><b>운영시간</b><span>10:00 – 22:00 · 연중무휴</span></div></li>
+    <li><div class="e">🚗</div><div><b>주차</b><span>제1~6주차장 무료 · 전기차 충전은 제2주차장</span></div></li>
+    <li><div class="e">📞</div><div><b>문의</b><span><a href="tel:0319576861" style="color:inherit">031-957-6861</a></span></div></li>
+  </ul>
+  <div class="btns">
+    <a class="btn primary" href="https://www.firstgarden.co.kr" target="_blank" rel="noopener">공식 홈페이지</a>
+    <a class="btn" href="https://wedding.firstgarden.co.kr" target="_blank" rel="noopener">퍼스트가든 웨딩</a>
+  </div>
+</div>
+
+<script>
+/* ════════════════════════════════════════════
+   여기만 수정하면 됩니다
+   ════════════════════════════════════════════ */
+const CONFIG = {
+  dateISO: '2027-06-26',
+  time: '18:00',          // 24시간제. 비워두면 '시간 추후 안내'로 표시
+  venue: '퍼스트가든',
+  hall: '',               // 예: '파티가든'
+  address: '경기도 파주시 탑삭골길 260',
+  // 혼주 성함 (비워두면 표시하지 않음)
+  groomFather: '', groomMother: '',
+  brideFather: '', brideMother: '',
+  // 교통/주차/식사 안내 (비워두면 표시하지 않음)
+  transport: [
+    { title:'내비게이션', desc:'"퍼스트가든" 또는 "탑삭골길 260" 검색 (파주시·고양시 경계에 있어요)' },
+    { title:'주차', desc:'퍼스트가든 제1~6주차장 무료 이용 · 전기차 충전은 제2주차장' },
+    { title:'입장 전', desc:'예식 전 퍼스트가든 정원을 자유롭게 이용하실 수 있습니다' },
+  ],
+  // 사진 (예: ['images/1.jpg','images/2.jpg'])
+  photos: [],
+  // mp3 파일을 쓰고 싶다면 경로 입력 (예: 'bgm.mp3'). 비워두면 내장 여행 BGM 재생
+  bgmUrl: ''
+};
+
+/* ───────── 렌더링 ───────── */
+const $ = id => document.getElementById(id);
+const [Y, M, D] = CONFIG.dateISO.split('-').map(Number);
+const DOW = ['일','월','화','수','목','금','토'];
+const dow = new Date(Y, M - 1, D).getDay();
+
+function fmtTime(t){
+  if(!t) return null;
+  const [h, m] = t.split(':').map(Number);
+  return `${h < 12 ? '오전' : '오후'} ${h % 12 || 12}시${m ? ' ' + m + '분' : ''}`;
+}
+$('whenText').textContent = `${Y}년 ${M}월 ${D}일 ${DOW[dow]}요일 ` + (fmtTime(CONFIG.time) || '· 시간 추후 안내');
+if (CONFIG.time) $('boardTime').textContent = CONFIG.time;
+
+// 혼주
+(function(){
+  const line = (f, m, rel, name) => {
+    const parents = [f, m].filter(Boolean).join(' · ');
+    return parents ? `${parents}<span class="sm">의 ${rel}</span> <b>${name}</b>`
+                   : `<span class="sm">${rel === '아들' ? '신랑' : '신부'}</span> <b>${name}</b>`;
+  };
+  $('family').innerHTML = line(CONFIG.groomFather, CONFIG.groomMother, '아들', '박종석') + '<br>' +
+                          line(CONFIG.brideFather, CONFIG.brideMother, '딸', '신주영');
+})();
+
+// 달력
+(function(){
+  const first = new Date(Y, M - 1, 1).getDay(), last = new Date(Y, M, 0).getDate();
+  let h = '<tr>' + DOW.map((d,i)=>`<th class="${i===0?'sun':i===6?'sat':''}">${d}</th>`).join('') + '</tr><tr>';
+  for (let i = 0; i < first; i++) h += '<td></td>';
+  for (let d = 1; d <= last; d++) {
+    const w = (first + d - 1) % 7;
+    h += `<td class="${d===D?'day':w===0?'sun':w===6?'sat':''}"><span>${d}</span></td>`;
+    if (w === 6 && d !== last) h += '</tr><tr>';
+  }
+  $('cal').innerHTML = h + '</tr>';
+})();
+
+// 카운트다운
+(function(){
+  const [hh, mm] = (CONFIG.time || '00:00').split(':').map(Number);
+  const target = new Date(Y, M - 1, D, hh, mm);
+  const tick = () => {
+    let s = Math.max(0, Math.floor((target - new Date()) / 1000));
+    const d = Math.floor(s / 86400); s %= 86400;
+    $('cdD').textContent = d; $('cdH').textContent = Math.floor(s / 3600);
+    $('cdM').textContent = Math.floor(s % 3600 / 60); $('cdS').textContent = s % 60;
+    const today = new Date(); today.setHours(0,0,0,0);
+    const left = Math.round((new Date(Y, M - 1, D) - today) / 86400000);
+    $('dtext').innerHTML = left > 0 ? `종석 ✈ 주영의 출발까지 <em>${left}일</em> 남았습니다`
+                        : left === 0 ? `오늘, 두 사람이 <em>이륙</em>합니다!` : `두 사람은 지금 <em>행복한 여행</em> 중입니다`;
+  };
+  tick(); setInterval(tick, 1000);
+})();
+
+// 장소
+$('venueName').textContent = CONFIG.venue + (CONFIG.hall ? ' ' + CONFIG.hall : '');
+$('venueAddr').textContent = CONFIG.address;
+$('kakaoMap').href = 'https://map.kakao.com/link/search/' + encodeURIComponent(CONFIG.venue);
+$('naverMap').href = 'https://map.naver.com/p/search/' + encodeURIComponent(CONFIG.venue);
+if (CONFIG.transport.length) {
+  $('transport').innerHTML = CONFIG.transport.map(t => `<dl><dt>${t.title}</dt><dd>${t.desc}</dd></dl>`).join('');
+}
+
+// 갤러리
+if (CONFIG.photos.length) {
+  $('gallery').hidden = false;
+  $('photos').innerHTML = CONFIG.photos.map(src => `<img src="${src}" loading="lazy" alt="">`).join('');
+}
+
+// 바코드
+document.querySelectorAll('.barcode').forEach(el => {
+  let s = +el.dataset.seed, h = '';
+  const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  for (let i = 0; i < 46; i++) h += `<i style="width:${1 + Math.floor(rnd()*3)}px;margin-right:${1 + Math.floor(rnd()*3)}px"></i>`;
+  el.innerHTML = h;
+});
+
+// 복사 & 토스트
+function toast(msg){ const t = $('toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(t._t); t._t = setTimeout(()=>t.classList.remove('show'), 1800); }
+async function copy(text, msg){
+  try { await navigator.clipboard.writeText(text); }
+  catch { const a = document.createElement('textarea'); a.value = text; document.body.appendChild(a); a.select(); document.execCommand('copy'); a.remove(); }
+  toast(msg);
+}
+$('copyAddr').onclick = () => copy(CONFIG.address, '주소가 복사되었습니다');
+$('shareBtn').onclick = () => copy(location.href, '청첩장 링크가 복사되었습니다');
+
+// 퍼스트가든 소개 시트
+function sheet(open){ $('sheet').classList.toggle('open', open); $('sheetBg').classList.toggle('open', open); }
+document.querySelectorAll('[data-open-venue]').forEach(b => b.onclick = () => sheet(true));
+$('sheetBg').onclick = $('sheetClose').onclick = () => sheet(false);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') sheet(false); });
+
+// 스크롤 등장 효과
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* ───────── BGM: 신나는 트로피컬 팝 (Web Audio로 직접 연주) ───────── */
+const BGM = (() => {
+  let ctx, master, fx, timer, step = 0, nextT = 0, playing = false, audioEl, noiseBuf;
+  const BPM = 124, S = 60 / BPM / 4;            // 16분음표 길이
+  const f = m => 440 * Math.pow(2, (m - 69) / 12);
+  // C - G - Am - F
+  const CHORDS = [[60,64,67,72],[59,62,67,71],[60,64,69,72],[60,65,69,72]];
+  const BASS = [36, 31, 33, 29];
+  const MEL = [ // [16분 위치, 길이(16분), 음]
+    [[0,2,76],[2,2,79],[4,2,76],[6,2,72],[8,4,74],[12,4,76]],
+    [[0,2,74],[2,2,71],[4,4,67],[8,2,71],[10,2,74],[12,4,79]],
+    [[0,2,81],[2,2,79],[4,2,76],[6,2,72],[8,4,76],[12,4,79]],
+    [[0,3,77],[3,3,76],[6,2,74],[8,8,72]],
+    [[0,2,79],[2,2,79],[4,2,81],[6,2,79],[8,4,76],[12,4,72]],
+    [[0,2,74],[2,2,76],[4,2,79],[6,2,74],[8,8,71]],
+    [[0,2,72],[2,2,76],[4,2,81],[6,2,79],[8,4,76],[12,4,74]],
+    [[0,4,77],[4,4,76],[8,8,72]]
+  ];
+  function init(){
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    master = ctx.createGain(); master.gain.value = 0;
+    const comp = ctx.createDynamicsCompressor(); comp.threshold.value = -14; comp.ratio.value = 4;
+    master.connect(comp).connect(ctx.destination);
+    // 멜로디용 딜레이 (여름 느낌의 울림)
+    fx = ctx.createGain(); const dl = ctx.createDelay(1), fb = ctx.createGain(), wet = ctx.createGain();
+    dl.delayTime.value = S * 3; fb.gain.value = .32; wet.gain.value = .28;
+    fx.connect(dl); dl.connect(fb).connect(dl); dl.connect(wet).connect(master);
+    noiseBuf = ctx.createBuffer(1, ctx.sampleRate * .3, ctx.sampleRate);
+    const d = noiseBuf.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+  }
+  function synth(freq, t, dur, vol, type, cutoff, send){
+    const o = ctx.createOscillator(), g = ctx.createGain(), lp = ctx.createBiquadFilter();
+    o.type = type; o.frequency.value = freq; lp.type = 'lowpass'; lp.frequency.value = cutoff;
+    g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol, t + .006);
+    g.gain.exponentialRampToValueAtTime(.0008, t + dur);
+    o.connect(lp).connect(g).connect(master); if (send) g.connect(fx);
+    o.start(t); o.stop(t + dur + .05);
+  }
+  function kick(t){
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.frequency.setValueAtTime(160, t); o.frequency.exponentialRampToValueAtTime(48, t + .12);
+    g.gain.setValueAtTime(.9, t); g.gain.exponentialRampToValueAtTime(.001, t + .32);
+    o.connect(g).connect(master); o.start(t); o.stop(t + .35);
+  }
+  function noise(t, dur, vol, type, freq){
+    const n = ctx.createBufferSource(), flt = ctx.createBiquadFilter(), g = ctx.createGain();
+    n.buffer = noiseBuf; flt.type = type; flt.frequency.value = freq;
+    g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(.0005, t + dur);
+    n.connect(flt).connect(g).connect(master); n.start(t); n.stop(t + dur + .02);
+  }
+  function schedule(){
+    while (nextT < ctx.currentTime + .2) {
+      const bar = Math.floor(step / 16), pos = step % 16, ci = bar % 4, t = nextT;
+      const intro = bar < 2;
+      // 드럼
+      if (pos % 4 === 0 && !intro) kick(t);
+      if (pos === 4 || pos === 12) { noise(t, .16, .35, 'bandpass', 1600); noise(t + .012, .12, .2, 'bandpass', 2400); }
+      if (pos % 4 === 2) noise(t, .09, .16, 'highpass', 8000);
+      else if (pos % 2 === 1) noise(t, .03, .05, 'highpass', 9000);
+      // 베이스: 옥타브 통통
+      if (pos % 2 === 0 && !intro) synth(f(BASS[ci] + (pos % 4 === 2 ? 12 : 0)), t, .2, .22, 'sawtooth', 520);
+      // 코드 플럭: 엇박 스탭
+      if ([0,3,6,10,12].includes(pos)) CHORDS[ci].forEach(m => synth(f(m), t, .22, .045, 'square', 2600));
+      // 멜로디 (마림바+리드)
+      if (bar >= 2) MEL[(bar - 2) % 8].forEach(([p, len, m]) => {
+        if (p === pos) { synth(f(m), t, len * S * 1.8, .09, 'triangle', 4200, true); synth(f(m + 12), t, .18, .03, 'sine', 6000, true); }
+      });
+      nextT += S; step++;
+    }
+  }
+  return {
+    start(){
+      if (CONFIG.bgmUrl) {
+        audioEl = audioEl || Object.assign(new Audio(CONFIG.bgmUrl), { loop: true, volume: .5 });
+        audioEl.play().catch(()=>{}); playing = true; return;
+      }
+      if (!ctx) init();
+      ctx.resume();
+      master.gain.cancelScheduledValues(ctx.currentTime);
+      master.gain.setTargetAtTime(.5, ctx.currentTime, .4);
+      if (!timer) { nextT = ctx.currentTime + .1; timer = setInterval(schedule, 50); }
+      playing = true;
+    },
+    stop(){
+      if (audioEl) { audioEl.pause(); playing = false; return; }
+      if (!ctx) return;
+      master.gain.setTargetAtTime(0, ctx.currentTime, .15);
+      playing = false;
+      setTimeout(() => { if (!playing) { clearInterval(timer); timer = null; ctx.suspend(); } }, 600);
+    },
+    get playing(){ return playing; }
+  };
+})();
+
+const bgmBtn = $('bgmBtn');
+function setBgm(on){ on ? BGM.start() : BGM.stop(); bgmBtn.classList.toggle('on', on); bgmBtn.style.opacity = on ? 1 : .55; }
+bgmBtn.onclick = () => setBgm(!BGM.playing);
+let userWantsBgm = true;
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) { userWantsBgm = BGM.playing; if (BGM.playing) setBgm(false); }
+  else if (userWantsBgm && bgmBtn.classList.contains('show')) setBgm(true);
+});
+
+/* ───────── 비행기 탭 → 이륙 ───────── */
+let boarded = false;
+$('planeBtn').addEventListener('click', () => {
+  if (boarded) return; boarded = true;
+  setBgm(true);                              // 사용자 탭 시점에 오디오 시작 (모바일 자동재생 정책)
+  $('tapHint').classList.add('hide'); $('coverSub').classList.add('hide');
+  $('runway').classList.add('rolling');
+  $('planeBtn').classList.add('fly');
+  setTimeout(() => {
+    $('cover').classList.add('gone');
+    document.body.classList.remove('locked');
+    bgmBtn.classList.add('show');
+    window.scrollTo(0, 0);
+  }, 2100);
+  setTimeout(() => $('cover').remove(), 3200);
+});
+</script>
+</body>
+</html>
